@@ -1,0 +1,40 @@
+<br>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        historias_usuario.
+    </div>
+    <div class="panel-body">
+        <p>
+
+          <div class="col-md-6">
+            <table class="table table-bordered">
+              <tr ng-repeat="historia in historiasUsuario.historias_usuario">
+                <td>
+                  {{historia.Nombre}}
+                </td>
+                <td>
+                  {{historia.Puntos}}
+                </td>
+                <td>
+                  <button class="btn btn-default" ng-click="historiasUsuario.seleccionarhu(historia)">seleccionar</button>
+                </td>
+              </tr>
+            </table>
+
+          <!--  <pre>{{historiasUsuario.historiasel | json}}</pre>
+
+
+            {{historiasUsuario.historias_usuario}}!-->
+          </div>
+          <div class="col-md-6">
+              <ver-hu idhu="historiasUsuario.historiasel.Id"/>
+          </div>
+
+
+
+        </p>
+    </div>
+    <div class="panel-footer">
+        Panel Footer
+    </div>
+</div>
